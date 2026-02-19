@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../public/HTMLImages/avatar.png"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Style in HTML</title>
+    <!-- Example of internal css -->
+    <style>
+      #para {
+        font-size: x-large;
+        color: yellowgreen;
+      }
+      .commonPara {
+        font-style: italic;
+        font-size: large;
+        color: cadetblue;
+        background-color: aqua;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- styles (css)- 3 types 
+     1. Inline : -- jaha html hai wahi par style dedo 
+     2. internal css: naya file MAt banao  gice style under <style> </style> 
+     3. external CSS :  keeping yuour styling in another file (style.css) and importing it via link tah in head section -->
+
+    <!-- example of inline css -->
+    <h1
+      style="text-align: center; background-color: aliceblue; color: darkblue"
+    >
+      Hie from Day2
+    </h1>
+    <p
+      style="text-align: center; font-size: medium; text-decoration: underline"
+    >
+      I am a paragraph
+    </p>
+    <!-- ids - particular element -->
+    <p id="para">I am a new Paragraph tag</p>
+
+    <!-- class  can be reused  -->
+    <p class="commonPara">I am a new Para 2</p>
+    <p class="commonPara">I am a new Para 3</p>
+
+    <h2 class="external">I am coming from external style sheet</h2>
+  </body>
+</html>
