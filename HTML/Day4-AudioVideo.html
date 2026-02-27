@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Audio & Video Complete Demo</title>
+  </head>
+  <body>
+    <h1>HTML5 Audio & Video Demo</h1>
+
+    <!-- ======================= AUDIO SECTION ======================= -->
+
+    <h2>🎵 Audio Example</h2>
+
+    <!-- 
+    <audio> tag is used to embed sound in a webpage.
+    
+    Important attributes:
+    - controls → Shows play/pause buttons
+    - autoplay → Automatically starts playing
+    - loop → Repeats the audio
+    - muted → Starts audio without sound
+    - preload → auto | metadata | none
+  -->
+
+    <audio controls preload="metadata">
+      <!-- 
+      <source> tag is used to define media file.
+      We can add multiple source formats.
+      Browser chooses the supported one.
+    -->
+
+      <source src="sample-audio.mp3" type="audio/mpeg" />
+      <source src="sample-audio.ogg" type="audio/ogg" />
+
+      <!-- Fallback text if browser does not support audio -->
+      Your browser does not support the audio element.
+    </audio>
+
+    <br /><br />
+
+    <!-- ======================= VIDEO SECTION ======================= -->
+
+    <h2>🎬 Video Example</h2>
+
+    <!-- 
+    <video> tag is used to embed videos.
+    
+    Important attributes:
+    - controls → Shows video controls
+    - autoplay → Auto starts video
+    - loop → Repeats video
+    - muted → Starts video muted
+    - poster → Thumbnail image before play
+    - width / height → Size of video
+  -->
+
+    <video width="500" controls poster="thumbnail.jpg" preload="metadata">
+      <!-- Multiple source formats for better compatibility -->
+      <source src="sample-video.mp4" type="video/mp4" />
+      <source src="sample-video.webm" type="video/webm" />
+
+      <!-- Fallback message -->
+      Your browser does not support the video tag.
+    </video>
+
+    <br /><br />
+
+    <!-- ======================= ADVANCED FEATURE ======================= -->
+
+    <h2>🎥 Video with Subtitles (Track Tag)</h2>
+
+    <!-- 
+    <track> tag is used to add subtitles or captions.
+    - kind="subtitles"
+    - srclang → language
+    - label → Display name
+    - default → Makes it default subtitle
+  -->
+
+    <video width="500" controls>
+      <source src="sample-video.mp4" type="video/mp4" />
+
+      <track
+        src="subtitles-en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+        default
+      />
+
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
