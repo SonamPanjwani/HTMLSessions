@@ -1,0 +1,43 @@
+/* descendant combinators - vo elements jo uske andar hai ex- div k andar k sare p elements */
+/* div p {
+  background-color: aqua;
+} */
+
+/* Child Combinator (>) */
+/* direct relation to apply hoga jaise ki main div k andar child p me apply hoga lekin main div k andar dusre parent ka child p will not inherit the style  */
+/* p > span {
+  background-color: yellow;
+} */
+
+/* next Sibling combinator - (+) 
+jo b first element app mention karoge + k bad vo elemnet ko select karege as in div k bad ka next span (1st only ) 
+
+
+*/
+/* div + span {
+  background-color: red;
+} */
+
+div ~ span {
+  background-color: orange;
+}
+/* to use pseudoclasses and pseudoelement together mention : first then :: */
+p:hover::first-line {
+  background-color: red;
+}
+p::last-line {
+  background-color: red;
+}
+/*  psuedo-classes*/
+a:link {
+  color: red;
+}
+a:visited {
+  color: yellow;
+}
+a:hover {
+  color: aqua;
+}
+a:active {
+  color: green;
+}
