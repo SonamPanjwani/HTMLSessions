@@ -1,0 +1,24 @@
+ul {
+  color: red;
+}
+
+li:nth-child(2) {
+  color: black;
+}
+
+li:nth-child(even) {
+  font-family: Roboto;
+  color: black;
+}
+
+p::selection {
+  background-color: red;
+}
+
+p::backdrop {
+  background-color: red;
+}
+
+.Downicon {
+  height: 150px;
+}
