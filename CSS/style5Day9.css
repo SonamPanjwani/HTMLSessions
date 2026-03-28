@@ -1,0 +1,66 @@
+body {
+  height: 2000px;
+}
+.container {
+  background-color: aliceblue;
+  margin: 50px 150px;
+  height: 800px;
+  width: 800px;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.static {
+  position: static;
+  background-color: brown;
+  /* top: 50px; not going to work */
+}
+
+.relative {
+  position: relative;
+  background-color: burlywood;
+  top: 20px;
+  left: 50px;
+}
+
+.absolute {
+  position: absolute;
+  background-color: red;
+  top: -30px;
+  left: -10px;
+  height: 30px;
+  color: aliceblue;
+}
+
+.outerContainer {
+  background-color: aquamarine;
+  position: relative;
+}
+/* absolute apne parent ko dekhta hai -- jisme relative mentioned hai agar reltive nahi hai to body ko parent samjh k top / left/right adjust karega  */
+
+.initial {
+  position: initial;
+  background-color: beige;
+  top: 25px;
+}
+
+.fixed {
+  background-color: blueviolet;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.sticky {
+  position: sticky;
+  background-color: cadetblue;
+  text-align: center;
+  text-transform: capitalize;
+  top: 0px;
+  border: 3px solid red;
+  z-index: 1000;
+}
