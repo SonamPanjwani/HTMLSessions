@@ -6,7 +6,7 @@
 .element {
   background-color: grey;
   margin: 150px 150px;
-  width: 200px;
+  width: 800px;
   height: 150px;
 
   /* Flex Container Properties  */
@@ -14,17 +14,19 @@
   flex-direction: row; /* sets the flex direction row /column */
   justify-content: center; /* horizontal alignment - flex start /end , space between , space around , space evenly */
   gap: 30px; /* gives the gap in between the elements  */
-  align-items: center; /* vertical postioning is done with align items  */
+  align-items: flex-start; /* vertical postioning is done with align items  */
   flex-wrap: wrap; /* moves the content to next line if needed wrap / no-wrap( does not wrap) , wrap-reverse ( reverse order wrap ) */
-  align-content: space-between;
+  /* align-content: space-between; */
   /* when we hae multiple lines of code */
 }
 
 .el-1 {
   background-color: aqua;
+  order: 4;
 }
 .el-2 {
   background-color: bisque;
+  order: 3;
 }
 .el-3 {
   background-color: red;
@@ -34,10 +36,19 @@
 }
 .el-5 {
   background-color: palegreen;
+  order: 2;
 }
 .el-6 {
   background-color: palegoldenrod;
+  flex-grow: 1;
 }
-.el-7 {
+.el7 {
   background-color: peru;
+  align-self: flex-end;
+
+  /* flex-shrink: 1;
+  flex-basis: 100px;
+} */
+  flex: 0 1 200px;
+  order: 1;
 }
