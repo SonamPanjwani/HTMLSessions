@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  height: 600px;
+  width: 900px;
+  background-color: grey;
+  padding: 50px;
+  margin-left: 300px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(4, 80px);
+  column-gap: 50px;
+  row-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  justify-content: stretch;
+}
+.box {
+  height: 50px;
+  width: 50px;
+}
+
+.box-1 {
+  background-color: aquamarine;
+}
+.box-2 {
+  background-color: blueviolet;
+  justify-self: end;
+}
+.box-3 {
+  background-color: rgb(255, 229, 127);
+}
+.box-4 {
+  background-color: rgb(226, 43, 70);
+}
+.box-5 {
+  background-color: rgb(120, 132, 65);
+}
+.box-6 {
+  background-color: rgb(166, 151, 180);
+}
+.box-7 {
+  background-color: rgb(9, 133, 20);
+}
+.box-8 {
+  background-color: rgb(43, 189, 226);
+}
+.box-9 {
+  background-color: darkmagenta;
+}
